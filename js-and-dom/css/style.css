@@ -4,3 +4,9 @@
   height: 100px;
   transition: all 1s;
 }
+
+canvas {
+  position: absolute;
+  left: 300px;
+  top:300px;
+}
