@@ -1,0 +1,32 @@
+p{
+  font-size: 20px;
+  font-style: italic;
+}
+body{
+  font-family: 'Times New Roman';
+  background-color: pink;
+}
+
+h1{
+  color: rgb(129,216,208);
+  font-weight:lighter;
+  background-color: white;
+  letter-spacing: 2px;
+  
+}
+
+a{
+  color: green;
+  cursor:alias;
+}
+.info_text{
+background-color: green;
+}
+
+.jo_love{
+  background-color: red;
+}
+
+.jo_hate{
+  background-color: grey;
+}

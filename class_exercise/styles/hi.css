@@ -1,0 +1,27 @@
+.testDiv{
+  background-color: green;
+  padding: 100px;
+  margin:40px;
+  border:100px dotted black;
+  width: 400px;
+}
+
+#test1{
+  position: fixed;
+  left:20px;
+  top:20px;
+}
+
+#top{
+  text-align: center;
+}
+
+h1{
+  background-color: #ccc;
+  padding: 30px;
+}
+
+.com{
+  display: inline-block;
+  
+}
