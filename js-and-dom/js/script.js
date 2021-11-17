@@ -1,5 +1,5 @@
 
-/*
+
 let roundbutton = document.getElementById('roundbutton');
 
 roundbutton.addEventListener('click', roundbuttonClicked);
@@ -45,16 +45,24 @@ function say(what) {
   }
 
 }
-*/
+
+
+
+/*
+let slider;
+
+
 function setup() {
   createCanvas(400, 400);
+  slider = document.getElementById('opacity');
 }
 
 function draw() {
   background(225);
+  let opacity = int(slider.value);
   push();
   noStroke();
-  ellipse(200, 400, 500, 230);
+  ellipse(200, 400, 500, opacity);
   pop();
   drawMonster(width / 2, height / 2);
 }
@@ -82,7 +90,7 @@ function drawMonster(x, y) {
 function drawHead(x, y) {
   push();
   translate(x, y);
-  fill("white");
+  fill(255,255,255);
   noStroke();
   ellipse(0, -80, 110, 108);
   pop();
@@ -139,3 +147,4 @@ function drawBody(x, y) {
   ellipse(0, 40, 12, 12);
   ellipse(0, -40, 12, 12);
 }
+*/
