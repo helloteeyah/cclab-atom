@@ -1,0 +1,141 @@
+
+body{
+  font-family: 'Press Start 2P', cursive;
+  background-color: black !important;
+}
+
+/* .button {
+  text-align: center;
+  position: relative;
+} */
+
+
+.nes-icon {
+    position:relative !important;
+    top: 205px !important;
+    left: 763px !important;
+    transform: scale(1.6) !important;
+}
+
+.yes {
+position: relative;
+background-color: black;
+border-color: white;
+border: 6px;
+border-style: outset;
+color: white;
+padding: 12px 28px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+position:relative;
+top:380px;
+left:670px;
+z-index: 9999;
+transition: background-color 0.15s;
+}
+
+.yes:hover {
+background-color: rgb(230,230,230);
+border-color: lightgrey;
+color: black;
+text-decoration:none;
+}
+
+.window {
+  text-align: center;
+}
+
+
+
+.container .ghost {
+	/* 相对定位 */
+	position: relative;
+	width: 110px;
+	height: 115px;
+	/* 圆角属性 左上角和右上角为圆角 */
+	border-radius: 75px 75px 0 0;
+	background-color: #fff;
+	animation: ghost 2s infinite;
+}
+/* 眼睛 start */
+.container .ghost .ghostEyes {
+	/* 弹性布局 */
+	display: flex;
+	/* 让元素平均分配宽度 */
+	justify-content: space-around;
+	width: 100px;
+	padding-top: 50px;
+	margin: 0 auto;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+/* 眼睛 end */
+
+/* 腮红 start  */
+
+.container .ghost .ghostDimples {
+	display: flex;
+	justify-content: space-around;
+	width: 130px;
+	padding-top: 2px;
+	margin: 0 auto;
+  color: red;
+  font-weight:bold;
+
+}
+
+
+
+.container .ghost .ghostDimples::before,
+.container .ghost .ghostDimples::after {
+	content: "";
+	width: 20px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: red;
+}
+
+
+
+@keyframes ghost {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		/* 2D位移 -15px 是向上走 */
+		transform: translateY(-15px);
+	}
+}
+
+
+.hidden {
+  opacity:0;
+}
+.console-container {
+
+  font-family:'Press Start 2P', cursive;
+  font-size:20px;
+  text-align:center;
+  height:160px;
+  width:600px;
+  display:block;
+  position:absolute;
+  color:white;
+  top:100px;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
