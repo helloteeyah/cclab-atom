@@ -10,12 +10,12 @@ body{
 } */
 
 
-.nes-icon {
+/* .nes-icon {
     position:relative !important;
     top: 205px !important;
     left: 763px !important;
     transform: scale(1.6) !important;
-}
+} */
 
 .yes {
 position: relative;
@@ -31,10 +31,9 @@ display: inline-block;
 font-size: 16px;
 margin: 4px 2px;
 position:relative;
-top:380px;
-left:670px;
 z-index: 9999;
 transition: background-color 0.15s;
+transform: translate(-360px, 55px);
 }
 
 .yes:hover {
@@ -122,14 +121,14 @@ text-decoration:none;
   font-family:'Press Start 2P', cursive;
   font-size:20px;
   text-align:center;
-  height:160px;
-  width:600px;
+  height:300px;
+  width:500px;
   display:block;
   position:absolute;
   color:white;
   top:100px;
   bottom:0;
-  left:0;
+  left:-100px;
   right:0;
   margin:auto;
 }
