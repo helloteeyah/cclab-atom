@@ -4,7 +4,7 @@ let w = 50;
 let drill = 1;
 let maze;
 let initial;
-let size = 5;
+let size = 10;
 let level = 1;
 
 let currentPosX = 0;
@@ -242,8 +242,8 @@ function draw() {
     if (maze[currentPosY][currentPosX] === 3){
 
       drill +=1;
+      size +=2;
       level +=1;
-      size +=1;
       setup();
     }
 // drillsElem.innerHTML = drill;

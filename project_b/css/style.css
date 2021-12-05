@@ -44,73 +44,12 @@ text-decoration:none;
 }
 
 .window {
-  text-align: center;
+  position: relative;
+  top:70px;
+  left:28%;
 }
 
 
-
-.container .ghost {
-	/* 相对定位 */
-	position: relative;
-	width: 110px;
-	height: 115px;
-	/* 圆角属性 左上角和右上角为圆角 */
-	border-radius: 75px 75px 0 0;
-	background-color: #fff;
-	animation: ghost 2s infinite;
-}
-/* 眼睛 start */
-.container .ghost .ghostEyes {
-	/* 弹性布局 */
-	display: flex;
-	/* 让元素平均分配宽度 */
-	justify-content: space-around;
-	width: 100px;
-	padding-top: 50px;
-	margin: 0 auto;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-
-/* 眼睛 end */
-
-/* 腮红 start  */
-
-.container .ghost .ghostDimples {
-	display: flex;
-	justify-content: space-around;
-	width: 130px;
-	padding-top: 2px;
-	margin: 0 auto;
-  color: red;
-  font-weight:bold;
-
-}
-
-
-
-.container .ghost .ghostDimples::before,
-.container .ghost .ghostDimples::after {
-	content: "";
-	width: 20px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: red;
-}
-
-
-
-@keyframes ghost {
-	0%,
-	100% {
-		transform: translateY(0);
-	}
-	50% {
-		/* 2D位移 -15px 是向上走 */
-		transform: translateY(-15px);
-	}
-}
 
 
 .hidden {
@@ -126,10 +65,8 @@ text-decoration:none;
   display:block;
   position:absolute;
   color:white;
-  top:100px;
-  bottom:0;
-  left:-100px;
-  right:0;
+  top:310px;
+  left: calc(50% - 250px);
   margin:auto;
 }
 .console-underscore {

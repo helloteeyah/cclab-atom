@@ -1,17 +1,99 @@
 body{
   font-family: 'Press Start 2P', cursive;
+  background-color: black !important;
 }
 
 
-.button {
-background-color: #4CAF50;
-border: none;
-color: white;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin: 4px 2px;
-cursor: pointer;
+.choice {
+  font-size: 20px;
+  position: absolute;
+  top:52%;
+  left:42%;
+}
+
+.easy:hover{
+    text-decoration: none;
+}
+
+.hard:hover{
+  text-decoration: none;
+}
+
+.paragraph {
+
+  position: absolute;
+  top:38%;
+  left:39%;
+  color: white;
+  font-size: 28px;
+}
+
+
+
+.container {
+  position:absolute;
+  top:30%;
+  left:30%;
+}
+.container .ghost {
+	/* 相对定位 */
+	position: relative;
+	width: 110px;
+	height: 115px;
+	/* 圆角属性 左上角和右上角为圆角 */
+	border-radius: 75px 75px 0 0;
+	background-color: #fff;
+	animation: ghost 2s infinite;
+}
+/* 眼睛 start */
+.container .ghost .ghostEyes {
+	/* 弹性布局 */
+	display: flex;
+	/* 让元素平均分配宽度 */
+	justify-content: space-around;
+	width: 100px;
+	padding-top: 50px;
+	margin: 0 auto;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+/* 眼睛 end */
+
+/* 腮红 start  */
+
+.container .ghost .ghostDimples {
+	display: flex;
+	justify-content: space-around;
+	width: 130px;
+	padding-top: 2px;
+	margin: 0 auto;
+  color: red;
+  font-weight:bold;
+
+}
+
+
+
+.container .ghost .ghostDimples::before,
+.container .ghost .ghostDimples::after {
+	content: "";
+	width: 20px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: red;
+}
+
+
+
+@keyframes ghost {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		/* 2D位移 -15px 是向上走 */
+		transform: translateY(-15px);
+	}
 }
